@@ -4,7 +4,10 @@ import {Sun, Moon} from '@gravity-ui/icons';
 
 
 export function ThemeSwitcher() {
+ 
   const { resolvedTheme, setTheme } = useTheme("light");
+  
+  
 
   return (
     <div className="flex items-center justify-center gap-1 rounded-full border border-neutral-200 p-1 dark:border-neutral-800">

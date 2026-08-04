@@ -1,11 +1,11 @@
-import { auth } from "@/lib/auth";
-import { headers } from "next/headers";
-import { redirect } from "next/navigation";
+import React from 'react';
 
-export default async function DashboardIndexPage() {
-  const session = await auth.api.getSession({
-    headers: await headers(),
-  });
+const DashBoardHomePage = () => {
+    return (
+        <div>
+            <h2 className='text-center font-bold'>Dashboard home page</h2>
+        </div>
+    );
+};
 
-  redirect(`/dashboard/${session.user.role}`);
-}
+export default DashBoardHomePage;
