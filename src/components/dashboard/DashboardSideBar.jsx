@@ -13,6 +13,7 @@ import {
   ListCheck,
   SquareListUl,
   Persons,
+  ChartLineArrowUp,
 } from "@gravity-ui/icons";
 
 const DashboardSideBar = () => {
@@ -52,7 +53,7 @@ const DashboardSideBar = () => {
       {
         name: "Analytics",
         href: "/dashboard/seller/analytics",
-        icon: ChartColumn,
+        icon: ChartLineArrowUp,
       },
     ],
 
@@ -77,7 +78,7 @@ const DashboardSideBar = () => {
       {
         name: "Analytics",
         href: "/dashboard/admin/analytics",
-        icon: ChartColumn,
+        icon: ChartLineArrowUp,
       },
     ],
   };

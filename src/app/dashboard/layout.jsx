@@ -1,5 +1,6 @@
 import DashboardNavbar from "@/components/dashboard/DashboardNavbar";
 import DashboardSideBar from "@/components/dashboard/DashboardSideBar";
+import { ResellHubIcon, ResellHubLogo } from "@/components/shared/ResellHubLogo";
 
 export default function DashboardLayout({ children }) {
   return (
@@ -9,7 +10,8 @@ export default function DashboardLayout({ children }) {
         {/* Logo Section */}
         <div className="h-16 flex items-center gap-3 px-6 border-b border-divider">
           <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-primary-foreground font-bold shadow-lg shadow-primary/20">
-            H
+            <ResellHubIcon size={32}></ResellHubIcon>
+            {/* <ResellHubLogo height={40}></ResellHubLogo> */}
           </div>
           <span className="font-bold text-lg tracking-tight bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             Hero Dashboard
@@ -29,9 +31,7 @@ export default function DashboardLayout({ children }) {
 
         {/* Scrollable Main Viewport */}
         <main className="flex-1 overflow-y-auto bg-content2/30 p-4 md:p-8 transition-all">
-          <div className="mx-auto max-w-7xl space-y-6">
-            {children}
-          </div>
+          <div className="mx-auto max-w-7xl space-y-6">{children}</div>
         </main>
       </div>
     </div>
